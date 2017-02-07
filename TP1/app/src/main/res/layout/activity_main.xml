@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.ulaval.ima.tp1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jean-Michel Provencher" />
+
+    <Button
+        android:text="ULaval"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ulaval_button"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/website_button"
+        android:layout_alignRight="@+id/my_profile_button"
+        android:layout_alignEnd="@+id/my_profile_button"
+        android:layout_alignLeft="@+id/my_profile_button"
+        android:layout_alignStart="@+id/my_profile_button"
+        android:onClick="openULavalActivity"/>
+
+    <Button
+        android:text="Site Web"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/website_button"
+        android:layout_alignLeft="@+id/ulaval_button"
+        android:layout_alignStart="@+id/ulaval_button"
+        android:layout_alignRight="@+id/ulaval_button"
+        android:layout_alignEnd="@+id/ulaval_button"
+        android:onClick="goToGitHub" />
+
+    <Button
+        android:text="Mon Profil"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_profile_button"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/ulaval_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="openMyProfileActivity" />
+</RelativeLayout>
