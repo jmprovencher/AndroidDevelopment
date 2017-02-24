@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_internet_status"
+            android:icon="@drawable/ic_menu_internet_status"
+            android:title="Statut Internet" />
+        <item
+            android:id="@+id/nav_readme"
+            android:icon="@drawable/ic_menu_readme"
+            android:title="À propos" />
+    </group>
+
+    <item android:title="Gestion utilisateur">
+        <menu>
+            <item
+                android:id="@+id/nav_form"
+                android:icon="@drawable/ic_menu_form"
+                android:title="Formulaire" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_profile"
+                android:title="Mon profil" />
+        </menu>
+    </item>
+
+</menu>

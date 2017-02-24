@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/firstNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénom"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <TextView
+            android:id="@+id/lastNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="date"
+            android:layout_width="fill_parent">
+        </EditText>
+        <TextView
+            android:id="@+id/departementTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Département"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:entries="@array/departmentlist">
+        </Spinner>
+
+
+        <TextView
+            android:id="@+id/sexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe"
+            android:textSize="10pt">
+        </TextView>
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female" />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre" />
+    </LinearLayout>
+
+</RelativeLayout>
+
