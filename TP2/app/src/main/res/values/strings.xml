@@ -16,10 +16,11 @@ Landjaeger alcatra andouille burgdoggen kevin, pig kielbasa ground round tri-tip
 Long enough eh!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_internet_status">internetStatus</string>
-    <string name="department1">GEL</string>
-    <string name="department2">GIF</string>
+    <string name="department1">GIF</string>
+    <string name="department2">GEL</string>
     <string name="department3">GLO</string>
     <string name="department4">IFT</string>
     <string name="radio_male">Homme</string>
     <string name="radio_female">Femme</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

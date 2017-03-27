@@ -60,7 +60,7 @@
             android:textSize="10pt">
         </TextView>
         <Spinner
-            android:id="@+id/SpinnerFeedbackType"
+            android:id="@+id/department"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:entries="@array/departmentlist">

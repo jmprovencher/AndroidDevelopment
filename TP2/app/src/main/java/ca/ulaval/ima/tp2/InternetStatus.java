@@ -20,6 +20,7 @@ import android.widget.TextView;
 public class InternetStatus extends Fragment {
     public View internetStatusView;
     Button internet_status_button;
+    protected GradientDrawable bgShape;
 
     @Nullable
     @Override
@@ -27,6 +28,9 @@ public class InternetStatus extends Fragment {
         internetStatusView = inflater.inflate(R.layout.internet_status_layout, container, false);
         internet_status_button = (Button) internetStatusView.findViewById(R.id.internet_status_button);
         final TextView internet_status_text_view = (TextView) internetStatusView.findViewById(R.id.internet_status);
+        ImageView iv = (ImageView) internetStatusView.findViewById(R.id.internet_status_shape);
+        bgShape = (GradientDrawable)iv.getDrawable();
+        bgShape.setColor(Color.RED);
 
 
         internet_status_button.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +39,7 @@ public class InternetStatus extends Fragment {
                         .getSystemService(Context.CONNECTIVITY_SERVICE);
 
                 NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-                ImageView iv = (ImageView) internetStatusView.findViewById(R.id.internet_status_shape);
-                GradientDrawable bgShape = (GradientDrawable)iv.getDrawable();
+
 
 
 
