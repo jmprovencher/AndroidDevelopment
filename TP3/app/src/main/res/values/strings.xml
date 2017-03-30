@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">TP3</string>
-    <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_models">modelsActivity</string>
+    <string name="title_activity_offers">OffersActivity</string>
+    <string name="title_activity_offer">OfferActivity</string>
+        <string-array name="transmission_spinner_array">
+            <item>Automatique</item>
+            <item>Manuelle</item>
+            <item>Robotique</item>
+        </string-array>
 </resources>

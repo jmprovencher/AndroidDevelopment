@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marque"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/brand_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/model_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modèle"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/model_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/transmission_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type de transmission"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/transmission_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Année"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/editYear"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_width="fill_parent">
+        </EditText>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:maxLength="7"
+            android:inputType="number"
+            android:layout_width="fill_parent">
+        </EditText>
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
